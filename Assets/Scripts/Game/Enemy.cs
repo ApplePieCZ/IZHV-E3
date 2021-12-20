@@ -59,15 +59,6 @@ public class Enemy : MonoBehaviour
     /// </summary>
     void FixedUpdate()
     {
-        /*
-         * Task #1B: Implement the enemy functionality
-         * Useful functions and variables:
-         *  - Get nearest player to given position: GameManager.Instance.NearestPlayer(position)
-         *    Can return null, which should be checked for!
-         *  - Transform of the currently controlled enemy: transform
-         *  - Physical body of the enemy: mRigidBody
-         * Implement a simple AI, which will head towards the closest player and follow them.
-         */
         GameObject player = GameManager.Instance.NearestPlayer(mRigidBody.position);
         if (player != null)
         {
@@ -76,8 +67,6 @@ public class Enemy : MonoBehaviour
             mRigidBody.MovePosition(transform.position + moveDelta);
             mRigidBody.MoveRotation(Quaternion.LookRotation(direction));
         }
-        
-        
     }
 
     /// <summary>
