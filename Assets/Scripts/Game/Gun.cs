@@ -191,7 +191,7 @@ public class Gun : MonoBehaviour
             Vector3 angles = director.eulerAngles;
             Vector3 position = director.position;
             angles.y -= 15.0f;
-            for (float i = 0.0f; i <= 30.0f; i += 6.0f)
+            for (float i = 0.0f; i <= shotgunSpread; i += shotgunSpread / (shotgunBullets - 1))
             {
                 SpawnBullet(new Vector3 {x = position.x, y = position.y, z = position.z},
                             Quaternion.Euler(angles.x, angles.y + i, angles.z));
