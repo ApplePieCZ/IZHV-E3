@@ -1218,7 +1218,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 49.999992, y: 49.999954}
+  m_AnchoredPosition: {x: 50, y: 49.999954}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &996938055
@@ -1510,9 +1510,9 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.222808
+    x: 0.13670135
     y: 0
-    width: 0.554384
+    width: 0.7265973
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -2088,7 +2088,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -49.999992, y: 49.999954}
+  m_AnchoredPosition: {x: -50, y: 49.999954}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1921442517
@@ -2244,6 +2244,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb4e462afaf487245aaf0b5586ae8a4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2023264693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023264673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 621567455fd1c4ceb811cc8a00b6a1a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NotificationBehavior: 0
+  m_MaxPlayerCount: 4
+  m_AllowJoining: 1
+  m_JoinBehavior: 0
+  m_PlayerJoinedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_PlayerLeftEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_JoinAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  m_PlayerPrefab: {fileID: 2023264673}
+  m_SplitScreen: 0
+  m_MaintainAspectRatioInSplitScreen: 1
+  m_FixedNumberOfSplitScreens: -1
+  m_SplitScreenRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 2
 --- !u!1001 &2113351538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2538,7 +2582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1204133201242880325, guid: 44209977f93d7854bac517dff34087fc, type: 3}
       propertyPath: m_DefaultControlScheme
-      value: M&K1
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1204133201242880325, guid: 44209977f93d7854bac517dff34087fc, type: 3}
       propertyPath: m_ActionEvents.Array.size
@@ -2546,7 +2590,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1204133201242880325, guid: 44209977f93d7854bac517dff34087fc, type: 3}
       propertyPath: m_NeverAutoSwitchControlSchemes
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1204133201242880325, guid: 44209977f93d7854bac517dff34087fc, type: 3}
       propertyPath: m_ActionEvents.Array.data[3].m_ActionId
